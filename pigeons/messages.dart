@@ -307,6 +307,9 @@ abstract class CameraApi {
   @async
   @ObjCSelector('setImageFileFormat:')
   void setImageFileFormat(PlatformImageFileFormat format);
+
+  @async
+  double getCameraLenPosition();
 }
 
 /// Handler for native callbacks that are not tied to a specific camera ID.

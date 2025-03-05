@@ -533,9 +533,8 @@ class AVFoundationCamera extends CameraPlatform {
     return PlatformPoint(x: point.x, y: point.y);
   }
 
-  Future<double> getCameraLensPosition(String camera) async {
-    print("DEBUGGING: calling avfoundation camera $camera");
-    return 1.0;
+  Future<double> getCameraLenPosition(int cameraId) async {
+    return await _hostApi.getCameraLenPosition();
   }
 }
 

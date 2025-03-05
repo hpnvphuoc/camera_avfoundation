@@ -1277,6 +1277,10 @@ static void selectBestFormatForRequestedFrameRate(
   return _captureDevice.maxAvailableVideoZoomFactor;
 }
 
+- (CGFloat)lenPosition {
+  return _captureDevice.lensPosition;
+}
+
 - (BOOL)setupWriterForPath:(NSString *)path {
   NSError *error = nil;
   NSURL *outputURL;

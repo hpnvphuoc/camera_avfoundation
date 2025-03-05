@@ -298,6 +298,14 @@ static FlutterError *FlutterErrorFromNSError(NSError *error) {
   });
 }
 
+- (void) getCameraLenPosition:(nonnull void (^)(NSNumber *_Nullable,
+                                              FlutterError *_Nullable))completion {
+  __weak typeof(self) weakSelf = self;
+  dispatch_async(self.captureSessionQueue, ^{
+      completion(@(weakSelf.camera.lenPosition), nil);
+  });
+}
+
 - (void)setFlashMode:(FCPPlatformFlashMode)mode
           completion:(nonnull void (^)(FlutterError *_Nullable))completion {
   __weak typeof(self) weakSelf = self;

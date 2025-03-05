@@ -115,10 +115,11 @@ packages:
   camera_platform_interface:
     dependency: "direct main"
     description:
-      name: camera_platform_interface
-      sha256: "953e7baed3a7c8fae92f7200afeb2be503ff1a17c3b4e4ed7b76f008c2810a31"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "805efb19f8eada68f8118847f221b1273cc616b8"
+      url: "https://github.com/hpnvphuoc/camera_platform_interface.git"
+    source: git
     version: "2.9.0"
   characters:
     dependency: transitive
