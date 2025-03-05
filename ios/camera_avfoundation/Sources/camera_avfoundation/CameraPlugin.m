@@ -298,7 +298,7 @@ static FlutterError *FlutterErrorFromNSError(NSError *error) {
   });
 }
 
-- (void) getCameraLenPosition:(nonnull void (^)(NSNumber *_Nullable,
+- (void)getCameraLenPositionWithCompletion:(nonnull void (^)(NSNumber *_Nullable,
                                               FlutterError *_Nullable))completion {
   __weak typeof(self) weakSelf = self;
   dispatch_async(self.captureSessionQueue, ^{
